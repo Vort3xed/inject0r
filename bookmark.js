@@ -1,6 +1,6 @@
 
 var Injector = {
-serverURL:"https://inject0r.paragram.repl.co"
+serverURL:"https://https://Inject0r-Beta-Channel.paragram.repl.co"
 };
 Injector.settings = {} // theme info goes here later
 Injector.user = {
@@ -19,7 +19,7 @@ Injector.info = {
 	<p> - More themes </p>
  	<p> - Hit 'Escape' key to redirect window to Google classroom</p>
 	
-  <p> - Injector now has a server for the backend <a href="https://inject0r.paragram.repl.co">here</a> </p>
+  <p> - Injector now has a server for the backend <a href="https://https://Inject0r-Beta-Channel.paragram.repl.co">here</a> </p>
   
   <h3> Chatbox </h3>
   <p> - Chatroom has been completely reprogrammed, rebranded to Chatbox </p>
@@ -194,7 +194,7 @@ body{
   `
 }
 async function fetchUserData(){
-	let dataFetch = await fetch('https://inject0r.paragram.repl.co/save', {
+	let dataFetch = await fetch('https://https://Inject0r-Beta-Channel.paragram.repl.co/save', {
   	method: 'GET',
     headers: {
      'token': Injector.user.token
@@ -206,7 +206,7 @@ fetchUserData().then(response => {
   Injector.user.settings += (JSON.parse(response).personalize);
 })
 async function saveData(category, data){
-	let dataSend = await fetch('https://inject0r.paragram.repl.co/save', {
+	let dataSend = await fetch('https://https://Inject0r-Beta-Channel.paragram.repl.co/save', {
   	method: 'POST',
     headers: {
     	'token': Injector.user.token,
@@ -217,7 +217,7 @@ async function saveData(category, data){
   return await dataSend.text();
 }
 async function deleteData(category, index){
-	let dataRem = await fetch('https://inject0r.paragram.repl.co/save', {
+	let dataRem = await fetch('https://https://Inject0r-Beta-Channel.paragram.repl.co/save', {
   	method: 'POST',
     	headers:{
      	'token': Injector.user.token,
@@ -229,7 +229,7 @@ async function deleteData(category, index){
   return await dataRem.text();
 }
 async function removeCategory(category){
-	let dataRemover = await fetch('https://inject0r.paragram.repl.co/save', {
+	let dataRemover = await fetch('https://https://Inject0r-Beta-Channel.paragram.repl.co/save', {
   	method: 'POST',
     	headers:{
       'token': Injector.user.token,
@@ -240,7 +240,7 @@ async function removeCategory(category){
   return await dataRemover.text();
 }
 async function fetchUserList(){
-  let joe = await fetch('https://inject0r.paragram.repl.co/userlist');
+  let joe = await fetch('https://https://Inject0r-Beta-Channel.paragram.repl.co/userlist');
   return await joe.text();
 }
 let namesObject = null;
@@ -1264,7 +1264,7 @@ let pseudoInput = null;
 
 function app3(){
   async function sendDM(user, content){
-	let req = await fetch('https://inject0r.paragram.repl.co/chat2', {
+	let req = await fetch('https://https://Inject0r-Beta-Channel.paragram.repl.co/chat2', {
   	method: 'POST',
     headers: {
     	'token':Injector.user.token,
@@ -1276,7 +1276,7 @@ function app3(){
   return await req.text();
 }
 async function makeDMFetch(user){
-	let req = await fetch('https://inject0r.paragram.repl.co/chat2', {
+	let req = await fetch('https://https://Inject0r-Beta-Channel.paragram.repl.co/chat2', {
   	method: 'GET',
     headers: {
     	'token':Injector.user.token,
